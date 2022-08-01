@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.indocyber.jmojamsostekapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JMOJamsostekApp"
+        android:name=".JMOJamsostekApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.home.HomeActivity"
+            android:theme="@style/Theme.JMOJamsostekApp"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activity.news.NewsActivity"
+            android:theme="@style/Theme.JMOJamsostekApp"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activity.contact.ContactActivity"
+            android:theme="@style/Theme.JMOJamsostekApp"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activity.profile.ProfileActivity"
+            android:theme="@style/Theme.JMOJamsostekApp"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activity.result.ResultActivity"
+            android:theme="@style/Theme.JMOJamsostekApp"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".activity.program.ProgramActivity"
+            android:theme="@style/Theme.JMOJamsostekApp"
+            android:exported="true">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>
